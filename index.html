@@ -1,0 +1,41 @@
+<htmL>
+    <head>
+        <title>Hexadecimal Color Game</title>
+        <link rel="stylesheet" href="hex-color-game.css" id="hex-color-game-css">
+    </head>
+<body>
+  <div id="instructions">
+    <h1>Helpful Tips</h1>
+    <h2>RGB is an additive color model.</h2>
+    <p>The additive color model generates color by light, opposite pigmented colors like paint and ink. The additive color model starts at black or no light, and the light in this model is comprised of three colors, red, green, and blue. So, for instance, as you increase the red light, things become redder. The light's value ranges between 0 and 255. 0 is the no light, and 255 is the brightest light.</p>
+
+    <h2>Hexadecimal use numbers and letter to define a large number.</h2>
+    <p>Hexadecimal uses numbers between 0 through 9 and letters from A to F. A is equal to 10 and F to 15. Therefore 0 would be black, and F would be pure white. How the hexadecimal is turned into a decimal is a complicated equation.</p>
+
+    <h2>Here is how to guess.</h2>
+    <p>The hexadecimal represents a color's red, green, and blue values. The lower the number for each color, the less bright the color. For example, the hexadecimal color #000000 is black because all colors emit no light. In contrast, <span style="background: #555; color: #fff; padding: 0 3px;">#FFFFFF</span> is pure white because all colors are fully bright. Red is <span style="color: #FF0000;">#FF0000</span>, green is <span style="color: #00FF00;">#00FF00</span>, and blue is <span style="color: #0000FF;">#0000FF</span>. The easiest way to determine a color's brightness is to look at the first letter or number of the color value.</p>
+    <div id="colorSamples">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <div id="container">
+    <div id="scorebox">
+      <div id="score">Score: <span>0</span> out of <span>1 </div>
+    </div>
+    <section id="header">
+      <p>Hoover over hexadecimal to see its color.</p>
+      <h1 id="hexDec"></h1>
+      <p>Click which color does this hexadecimal represents?</p>
+      <div id="answer"></div>
+    </section>
+    <section id="colors">
+    </section>
+    <section id="controls">
+      <button>New Game</button> <a href="/">Start Over</a>
+    </section>
+  </div>
+  <script src="hex-color-game.js" id="hex-color-game-js"></script>
+</body>
+</html>
